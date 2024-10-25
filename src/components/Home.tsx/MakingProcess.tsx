@@ -1,6 +1,7 @@
-"use client"; 
+"use client";
 
 import React from "react";
+import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
 import image1 from '../images/01.png';
 import image2 from '../images/02.png';
@@ -15,46 +16,25 @@ import image10 from '../images/10.png';
 import image11 from '../images/11.png';
 import image12 from '../images/12.png';
 
+// Modify the interface to expect a source with a 'src' property, as Next.js images import with additional attributes
 interface Work {
   id: number;
-  imgSrc: string;
+  imgSrc: StaticImageData;
 }
 
 const PreviousWorks: React.FC = () => {
   const works: Work[] = [
-    //@ts-expect-error
     { id: 1, imgSrc: image1 },
-        //@ts-expect-error
-
     { id: 2, imgSrc: image2 },
-        //@ts-expect-error
-
     { id: 3, imgSrc: image3 },
-        //@ts-expect-error
-
     { id: 4, imgSrc: image4 },
-        //@ts-expect-error
-
     { id: 5, imgSrc: image5 },
-        //@ts-expect-error
-
     { id: 6, imgSrc: image6 },
-        //@ts-expect-error
-
     { id: 7, imgSrc: image7 },
-        //@ts-expect-error
-
     { id: 8, imgSrc: image8 },
-        //@ts-expect-error
     { id: 9, imgSrc: image9 },
-        //@ts-expect-error
-
     { id: 10, imgSrc: image10 },
-        //@ts-expect-error
-
     { id: 11, imgSrc: image11 },
-        //@ts-expect-error
-
     { id: 12, imgSrc: image12 },
   ];
 
