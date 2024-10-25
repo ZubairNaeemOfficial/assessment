@@ -22,38 +22,38 @@ interface Work {
 
 const PreviousWorks: React.FC = () => {
   const works: Work[] = [
-    //@ts-ignore
+    //@ts-expect-error
     { id: 1, imgSrc: image1 },
-        //@ts-ignore
+        //@ts-expect-error
 
     { id: 2, imgSrc: image2 },
-        //@ts-ignore
+        //@ts-expect-error
 
     { id: 3, imgSrc: image3 },
-        //@ts-ignore
+        //@ts-expect-error
 
     { id: 4, imgSrc: image4 },
-        //@ts-ignore
+        //@ts-expect-error
 
     { id: 5, imgSrc: image5 },
-        //@ts-ignore
+        //@ts-expect-error
 
     { id: 6, imgSrc: image6 },
-        //@ts-ignore
+        //@ts-expect-error
 
     { id: 7, imgSrc: image7 },
-        //@ts-ignore
+        //@ts-expect-error
 
     { id: 8, imgSrc: image8 },
-        //@ts-ignore
+        //@ts-expect-error
     { id: 9, imgSrc: image9 },
-        //@ts-ignore
+        //@ts-expect-error
 
     { id: 10, imgSrc: image10 },
-        //@ts-ignore
+        //@ts-expect-error
 
     { id: 11, imgSrc: image11 },
-        //@ts-ignore
+        //@ts-expect-error
 
     { id: 12, imgSrc: image12 },
   ];
