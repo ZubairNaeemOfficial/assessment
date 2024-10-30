@@ -6,7 +6,7 @@ interface RecipeListProps {
   recipes: Recipe[];
 }
 
-const RecipeList: React.FC<RecipeListProps> = ({ recipes }) => {
+const RecipeList: React.FC<RecipeListProps> = ({ recipes}) => {
   const [visibleCount, setVisibleCount] = useState(10); // State to manage the number of visible recipes
 
   // Function to handle the "Show More" button click
